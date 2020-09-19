@@ -23,3 +23,8 @@ a{
   display: inline-block;
   color: inherit;
 }
+body{
+  @extend %circe-regular;
+  font-size: 18px;
+  line-height: 24px;
+}
