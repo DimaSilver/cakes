@@ -27,4 +27,21 @@ body{
   @extend %circe-regular;
   font-size: 18px;
   line-height: 24px;
+  background-color: #fbebea;
+  color: #2d2829;
+}
+.container{
+  max-width: 1250px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.descr{
+  @extend %IntroH2Base;
+  font-size: 41px;
+  line-height: 44px;
+}
+.btn{
+  border-radius: 30px;
+  font-size: 13px;
+  line-height: 15px;
 }

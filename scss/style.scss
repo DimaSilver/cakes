@@ -3,7 +3,113 @@
 @import "fonts";
 @import "global";
 
-
-
+.header{
+  padding-top: 60px;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__phone{
+    font-size: 15px;
+    line-height: 17px;
+    @extend %circe-bold;
+  }
+}
+.menu{
+  &__list-item{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 15px;
+    & + & {
+      margin-left: 44px;
+    }
+  }
+}
+.first-screen{
+  padding: 125px 0 225px;
+  background-image: url('../images/first-screen__img.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right;
+  &__left{
+    position: relative;
+    &::after{
+      position: absolute;
+      content: "";
+      background-image: url('../images/first-screen__bg3.svg');
+      width: 168px;
+      height: 119px;
+      bottom: 150px;
+      left: 360px;
+    }
+  }
+  &__textarea{
+    max-width: 370px;
+    position: relative;
+    &::before,
+    &::after{
+      position: absolute;
+      content: "";
+    }
+    &::before{
+      background-image: url('../images/first-screen__bg2.svg');
+      width: 63px;
+      height: 60px;
+      top: 95px;
+      right: -240px;
+    }
+    &::after{
+      background-image: url('../images/first-screen__bg1.svg');
+      width: 111px;
+      height: 110px;
+      top: -140px;
+      right: -330px;
+    }
+  }
+  &__title{
+    @extend %playfairDisplay-bold;
+    font-size: 78px;
+    line-height: 80px;
+    letter-spacing: 0.75px;
+  }
+  &__descr{
+    margin-top: -33px;
+  }
+  &__link{
+    padding: 18px 67px 17px;
+    margin-top: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #f50049;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0px 5px 7.04px 0.96px rgba(255, 0, 67, 0.3);
+    }
+  }
+  &__benefits{
+    margin-top: 125px;
+    display: flex;
+  }
+  &__benefits-item{
+    display: flex;
+    align-items: center;
+    & + & {
+      margin-left: 70px;
+    }
+  }
+  &__benefits-item__img{
+    margin-right: 15px;
+  }
+  &__benefits-item__title{
+    font-size: 14px;
+    line-height: 18px;
+    color: #000000;
+    max-width: 175px;
+  }
+  &__benefits-item__title-small{
+    max-width: 90px;
+  }
+}
 
 @import "media";
