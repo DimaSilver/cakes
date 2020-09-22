@@ -111,5 +111,110 @@
     max-width: 90px;
   }
 }
+.our-cakes{
+  margin: -80px 0 90px;
+  &__gallery{
+    display: inline-block;
+    position: relative;
+  }
+  &__gallery-item{
+    overflow: hidden;
+    box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.05);
+    transition: all .3s;
+    position: relative;
+    border-right: 1px solid #fdf4f4;
+    border-left: 1px solid #fdf4f4;
+    &:hover{
+      box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
+    }
+    &:first-child{
+      .our-cakes__gallery-item__arrow{
+        display: flex;
+      }
+      .our-cakes__gallery-item__arrow .our-cakes__gallery-item__arrow-name{
+        padding-right: 24px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    &:first-child,
+    &:nth-child(6){
+      width: 696px;
+      height: 653px;
+    }
+    &:nth-child(2){
+      position: absolute;
+    }
+    &:nth-child(2),
+    &:nth-child(3){
+      margin-left: 35px;
+    }
+    &:nth-child(5){
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    &:nth-child(2),
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      width: 484px;
+      height: 305px;
+    }
+    &:nth-child(6){
+      float: right;
+    }
+    &:nth-child(4),
+    &:nth-child(6){
+      margin-top: 45px;
+    }
+  }
+  &__gallery-item__wrapper{
+    padding: 30px 67px 38px 45px;
+  }
+  &__gallery-item__textarea{
+    position: absolute;
+  }
+  &__gallery-item__img-classic{
+    margin: -60px -50px;
+  }
+  &__gallery-item__img-muss{
+    margin: -105px -215px;
+  }
+  &__gallery-item__img-wedding{
+    margin: -33px -250px;
+  }
+  &__gallery-item__img-men{
+    margin: -75px -115px;
+  }
+  &__gallery-item__img-women{
+    margin: -80px -120px;
+  }
+  &__gallery-item__img-kids{
+    margin: -60px -130px;
+  }
+  &__gallery-item__title{
+    font-size: 24px;
+    line-height: 26px;
+    margin-top: -5px;
+  }
+  &__gallery-item__num{
+    margin-top: -39px;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(#2d2829, .7);
+  }
+  &__gallery-item__arrow{
+    position: absolute;
+    bottom: 30px;
+    right: 71px;
+  }
+}
+.individual-order{
+}
+
+
+
+
 
 @import "media";

@@ -45,3 +45,12 @@ body{
   font-size: 13px;
   line-height: 15px;
 }
+.title{
+  @extend %playfairDisplay-bold;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 0.1px;
+}
+.textarea{
+  text-align: center;
+}
