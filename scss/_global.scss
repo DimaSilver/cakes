@@ -35,6 +35,11 @@ body{
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-small{
+  max-width: 935px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
 .descr{
   @extend %IntroH2Base;
   font-size: 41px;
