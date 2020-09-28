@@ -461,8 +461,6 @@
   &__item-choice__btn{
     padding: 17px 63px 18px 62px;
     border: none;
-    outline: none;
-    cursor: pointer;
   }
   &__item-design__slider-arrows{
     border: none;
@@ -867,6 +865,105 @@
     }
   }
 }
+.contacts{
+  margin-top: 80px;
+  padding-bottom: 297px;
+  background-image: url('../images/contacts-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position:  right bottom;
+  position: relative;
+  &__title{
+    margin-left: -5px;
+  }
+  &__descr{
+    margin-left: -5px;
+  }
+  &__text{
+    font-size: 20px;
+    color: #000000;
+    margin-top: -30px;
+  }
+  &__form{
+    margin-top: 50px;
+    max-width: 550px;
+  }
+  &__form-input{
+    max-width: 550px;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    border-bottom: 1px solid #c9bcbb;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(#000, .4);
+    & + & {
+      margin-top: 40px;
+    }
+    &::placeholder{
+      font-size: 14px;
+      line-height: 16px;
+      color: rgba(#000, .4);
+    }
+  }
+  &__form-btn{
+    margin-top: 80px;
+    padding: 16px 46px 17px;
+    border: none;
+  }
+  &__right{
+    position: absolute;
+    right: 50%;
+    top: 120px;
+    transform: translateX(calc(100% + 30px));
+    max-width: 330px;
+    font-size: 20px;
+    color: #000000;
+  }
+  &__social-link{
+    margin-top: 10px;
+    width: 63px;
+    height: 63px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+    transition: all .3s;
+    &::before{
+      position: absolute;
+      content: "";
+      background-repeat: no-repeat;
+    }
+    &:hover{
+      box-shadow: 0px 2px 7.04px 0.96px rgba(255, 0, 67, 0.2);
+    }
+    & + & {
+      margin-left: 30px;
+    }
+    &.instagram{
+      &::before{
+        background-image: url('../images/instagram__big-color.svg');
+        width: 28px;
+        height: 28px;
+        top: 17px;
+        left: 18px;
+      }
+    }
+    &.vk{
+      &::before{
+        background-image: url('../images/vk__bg-color.svg');
+        width: 41px;
+        height: 29px;
+        top: 14px;
+        left: 8px;
+      }
+    }
+  }
+}
+
+
+
+
 
 
 @import "media";
