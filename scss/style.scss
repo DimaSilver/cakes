@@ -960,8 +960,71 @@
     }
   }
 }
-
-
+.footer{
+  background-color: #e8e8e8;
+  padding-top: 40px;
+  &__top{
+    margin-bottom: 40px;
+  }
+  &__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list-item{
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #2d2829;
+    & + & {
+      margin-left: 47px;
+    }
+  }
+  &__socials-item{
+    display: inline-block;
+    & + & {
+      margin-left: 18px;
+    }
+  }
+  &__socials-link{
+    &.instagram{
+      position: relative;
+      &::before{
+        position: absolute;
+        content: "";
+        background-image: url('../images/instagram-noncolor__hover.png');
+        width: 23px;
+        height: 23px;
+        top: 15px;
+        opacity: 0;
+        transition: .3s ease-in-out;
+      }
+    }
+  }
+  &__bottom{
+    padding: 11px 0 10px;
+    position: relative;
+    &::before{
+      position: absolute;
+      content: "";
+      width: 1220px;
+      height: 1px;
+      background-color: #d0d0d0;
+      top: 0;
+    }
+  }
+  &__copy{
+    @extend %roboto-regular;
+    text-align: center;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.4px;
+    color: rgba(#000, .5);
+  }
+}
+.footer__socials-link.instagram:hover::before {
+  opacity: 1;
+}
 
 
 
