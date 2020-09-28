@@ -823,7 +823,50 @@
     margin-top: -10px;
   }
 }
-
+.delivery{
+  background-image: url('../images/delivery-bg.jpg');
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-position: center -105px;
+  background-size: cover;
+  padding: 60px 0 185px;
+  &__textarea{
+    float: right;
+    max-width: 485px;
+    color: #fff;
+  }
+  &__textarea-inner{
+    position: relative;
+  }
+  &__textarea-num{
+    position: absolute;
+    margin-top: -20px;
+    @extend %playfairDisplay-bold;
+    font-size: 64px;
+    line-height: 66px;
+  }
+  &__textarea-paragraph{
+    padding-left: 50px;
+  }
+  &__textarea-paragraph__title{
+    @extend %circe-bold;
+    font-size: 21px;
+    line-height: 24px;
+  }
+  &__textarea-paragraph__text{
+    margin-top: -15px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  &__textarea-item{
+    &:first-child{
+      margin-top: -22px;
+    }
+    & + & {
+      margin-top: 35px;
+    }
+  }
+}
 
 
 @import "media";
