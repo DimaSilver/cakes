@@ -12,18 +12,25 @@
 <header class="header">
     <div class="container">
         <div class="header__inner">
-            <nav class="menu">
-                <ul class="menu__list">
-                    <li class="menu__list-item"><a class="menu__list-link" href="#"><img src="images/logo.png"
-                                                                                         alt=""></a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Наши торты</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Индивидуальный заказ</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Отзывы</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">О нас</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Как заказать</a></li>
-                    <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
-                </ul>
-            </nav>
+            <div class="header__left">
+                <a class="logo" href="#"><img src="images/logo.png"
+                                              alt=""></a>
+                <nav class="menu">
+                    <div class="menu__btn">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Наши торты</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Индивидуальный заказ</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Отзывы</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">О нас</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Как заказать</a></li>
+                        <li class="menu__list-item"><a class="menu__list-link" href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
             <div class="header__phone">
                 <a class="header__phone-link" href="#">+7 906 899 92 96</a>
             </div>
@@ -71,6 +78,9 @@
                     </div>
                     <img class="our-cakes__gallery-item__img our-cakes__gallery-item__img-classic"
                          src="images/our-cakes__img1.jpg" alt="">
+                    <div class="our-cakes__gallery-item__arrow-mobile">
+                        <div class="our-cakes__gallery-item__arrow-name__mobile">Смотреть</div>
+                    </div>
                     <div class="our-cakes__gallery-item__arrow">
                         <div class="our-cakes__gallery-item__arrow-name">Смотреть</div>
                         <img src="images/our-cakes__arrow.svg" alt="">
@@ -251,8 +261,12 @@
                     <div class="individual-order__item-sizes__inner">
                         <div class="individual-order__item-sizes__part">
                             <div class="individual-order__item-sizes__part-top">
-                                <img class="individual-order__item-sizes__part-img"
-                                     src="images/individual-order__size1.svg" alt="">
+                                <picture>
+                                    <source srcset="images/individual-order__item-size-verysmall__768.svg 1x" media="(max-width:1040px)">
+                                    <img class="individual-order__item-sizes__part-img"
+                                                       src="images/individual-order__size1.svg" alt="">
+                                </picture>
+
                                 <p class="individual-order__item-sizes__part-num individual-order__item-sizes__part-num__small">
                                     1 кг</p>
                             </div>
@@ -263,8 +277,11 @@
                         </div>
                         <div class="individual-order__item-sizes__part individual-order__item-sizes__part-second">
                             <div class="individual-order__item-sizes__part-top">
-                                <img class="individual-order__item-sizes__part-img"
-                                     src="images/individual-order__size2.svg" alt="">
+                                <picture>
+                                    <source srcset="images/individual-order__item-size-small__768.svg 1x" media="(max-width:1040px)">
+                                    <img class="individual-order__item-sizes__part-img"
+                                              src="images/individual-order__size2.svg" alt="">
+                                </picture>
                                 <p class="individual-order__item-sizes__part-num individual-order__item-sizes__part-num__big">
                                     2 кг</p>
                             </div>
@@ -275,8 +292,12 @@
                         </div>
                         <div class="individual-order__item-sizes__part">
                             <div class="individual-order__item-sizes__part-top">
-                                <img class="individual-order__item-sizes__part-img"
-                                     src="images/individual-order__size3.svg" alt="">
+                                <picture>
+                                    <source srcset="images/individual-order__item-size-middle__768.svg 1x" media="(max-width:1040px)">
+                                    <img class="individual-order__item-sizes__part-img"
+                                                      src="images/individual-order__size3.svg" alt="">
+                                </picture>
+
                                 <p class="individual-order__item-sizes__part-num individual-order__item-sizes__part-num__bigger">
                                     5 кг</p>
                             </div>
@@ -287,8 +308,12 @@
                         </div>
                         <div class="individual-order__item-sizes__part">
                             <div class="individual-order__item-sizes__part-top">
-                                <img class="individual-order__item-sizes__part-img"
-                                     src="images/individual-order__size4.svg" alt="">
+                                <picture>
+                                    <source srcset="images/individual-order__item-size-big__768.svg 1x" media="(max-width:1040px)">
+                                    <img class="individual-order__item-sizes__part-img"
+                                                      src="images/individual-order__size4.svg" alt="">
+                                </picture>
+
                                 <p class="individual-order__item-sizes__part-num individual-order__item-sizes__part-num__biggest">
                                     8 кг</p>
                             </div>
@@ -425,7 +450,7 @@
                                 </p>
                             </div>
                             <div class="reviews__slider-item__textarea-bottom">
-                                <p class="reviews__slider-item__text">
+                                <p class="reviews__slider-item__text text">
                                     Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
                                     своевременную доставку! Теперь будем заказывать торты только у вас для наших
                                     семейных
@@ -451,7 +476,7 @@
                                 </p>
                             </div>
                             <div class="reviews__slider-item__textarea-bottom">
-                                <p class="reviews__slider-item__text">
+                                <p class="reviews__slider-item__text text">
                                     Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
                                     своевременную доставку! Теперь будем заказывать торты только у вас для наших
                                     семейных
@@ -477,7 +502,7 @@
                                 </p>
                             </div>
                             <div class="reviews__slider-item__textarea-bottom">
-                                <p class="reviews__slider-item__text">
+                                <p class="reviews__slider-item__text text">
                                     Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
                                     своевременную доставку! Теперь будем заказывать торты только у вас для наших
                                     семейных
@@ -503,7 +528,7 @@
                                 </p>
                             </div>
                             <div class="reviews__slider-item__textarea-bottom">
-                                <p class="reviews__slider-item__text">
+                                <p class="reviews__slider-item__text text">
                                     Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за
                                     своевременную доставку! Теперь будем заказывать торты только у вас для наших
                                     семейных
@@ -530,7 +555,7 @@
                 <div class="about__text-item">
                     <p class="about__text-item__title">Кондитер – как призвание
                     </p>
-                    <p class="about__text-item__content">
+                    <p class="about__text-item__content text">
                         Павел — профессиональный повар в различных гастрономических областях, но однажды его сердце
                         покорило кондитерское искусство. С ранних лет он увлекался утонченным мастерством и обратился к
                         своим талантам как кондитер.
@@ -539,7 +564,7 @@
                 <div class="about__text-item">
                     <p class="about__text-item__title">Принцип – натуральные ингредиенты
                     </p>
-                    <p class="about__text-item__content">
+                    <p class="about__text-item__content text">
                         Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную
                         продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
                     </p>
@@ -563,7 +588,7 @@
     <div class="container-small">
         <div class="quote__inner">
             <div class="quote__text">
-                Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в
+                Я за простые рецепты. В Италии это называют cucina povera: когда обычные ингредиенты превращаются в
                 божественное блюдо.
             </div>
             <img class="quote__image" src="images/quotes-img.svg" alt="">
@@ -587,14 +612,14 @@
                     <div class="benefits__item-textarea__paragraph">
                         <p class="benefits__item-textarea__title">Без искусственных добавок
                         </p>
-                        <p class="benefits__item-textarea-text">Работаем с натуральными ингредиентами и свежими
+                        <p class="benefits__item-textarea-text text">Работаем с натуральными ингредиентами и свежими
                             продуктами
                         </p>
                     </div>
                     <div class="benefits__item-textarea__paragraph">
                         <p class="benefits__item-textarea__title">Свежий торт в день торжества
                         </p>
-                        <p class="benefits__item-textarea-text">Торты изготавливаются в течение суток до отправки</p>
+                        <p class="benefits__item-textarea-text text">Торты изготавливаются в течение суток до отправки</p>
                     </div>
                 </div>
             </div>
@@ -603,7 +628,7 @@
                     <h4 class="benefits__item-title title">Забота о клиентах</h4>
                     <div class="benefits__item-textarea__paragraph">
                         <p class="benefits__item-textarea__title-italic descr">Для нас важно</p>
-                        <p class="benefits__item-textarea-text">Нам важно чтобы каждый торт был безупречным, как внутри,
+                        <p class="benefits__item-textarea-text text">Нам важно чтобы каждый торт был безупречным, как внутри,
                             так
                             и снаружи, чтобы он был создан исключительно для вас и для вашего события.</p>
                     </div>
@@ -625,7 +650,7 @@
                     <div class="delivery__textarea-paragraph">
                         <p class="delivery__textarea-paragraph__title">Срок заказа
                         </p>
-                        <p class="delivery__textarea-paragraph__text">Размещать заказы желательно за 2-3 дня. <br>На
+                        <p class="delivery__textarea-paragraph__text text">Размещать заказы желательно за 2-3 дня. <br>На
                             выходные заказы лучше размещать минимум за неделю. </p>
                     </div>
                 </div>
@@ -636,7 +661,7 @@
                     <div class="delivery__textarea-paragraph">
                         <p class="delivery__textarea-paragraph__title">Доставка по городу
                         </p>
-                        <p class="delivery__textarea-paragraph__text">
+                        <p class="delivery__textarea-paragraph__text text">
                             Доставка в пределах города 200 рублей , при заказе на сумму более 2000 доставка
                             бесплатно.</p>
                     </div>
@@ -648,7 +673,7 @@
                     <div class="delivery__textarea-paragraph">
                         <p class="delivery__textarea-paragraph__title">Доставка за городом
                         </p>
-                        <p class="delivery__textarea-paragraph__text">Доставка за пределами города рассчитывается
+                        <p class="delivery__textarea-paragraph__text text">Доставка за пределами города рассчитывается
                             индивидуально.</p>
                     </div>
                 </div>
@@ -660,7 +685,7 @@
     <div class="container">
         <h3 class="contacts__title title">Контакты</h3>
         <p class="contacts__descr descr">Остались вопросы?</p>
-        <p class="contacts__text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
+        <p class="contacts__text text">Заполните форму ниже и наш кондитер свяжется с Вами</p>
         <form class="contacts__form">
             <input class="contacts__form-input" type="text" placeholder="Ваше имя">
             <input class="contacts__form-input" type="text" placeholder="Email  адрес">
@@ -668,12 +693,12 @@
             <button class="btn contacts__form-btn" type="submit">Отправить</button>
         </form>
         <div class="contacts__right">
-            <p class="contacts__right-field"><a href="tel:+79068999296">Или позвоните по телефону: <br>+7 906 899 92 96</a>
+            <p class="contacts__right-field text"><a href="tel:+79068999296">Или позвоните по телефону: <br>+7 906 899 92 96</a>
             </p>
-            <p class="contacts__right-field"><a href="mailto:bakerybypavel@mail.ru">Наша почта :
+            <p class="contacts__right-field text"><a href="mailto:bakerybypavel@mail.ru">Наша почта :
                 bakerybypavel@mail.ru</a></p>
             <div class="contacts__social">
-                <p class="contacts__right-field">Мы в соц. сетях:</p>
+                <p class="contacts__right-field text">Мы в соц. сетях:</p>
                 <a class="contacts__social-link instagram" href="#"></a>
                 <a class="contacts__social-link vk" href="#"></a>
             </div>
@@ -684,7 +709,10 @@
     <div class="container">
         <div class="footer__top">
             <div class="footer__top-inner">
-                <a class="logo" href="#"><img src="images/logo-footer.png" alt=""></a>
+                <a class="logo" href="#">
+                    <img class="footer__logo-normal" src="images/logo-footer.png" alt="">
+                    <img class="footer__logo-responsive" src="images/logo-footer-768.png" alt="">
+                </a>
                 <ul class="footer__list">
                     <li class="footer__list-item"><a class="footer__list-link" href="#">Наши торты</a></li>
                     <li class="footer__list-item"><a class="footer__list-link" href="#">Индивидуальный заказ</a></li>
@@ -705,6 +733,16 @@
         </div>
         <div class="footer__bottom">
             <p class="footer__copy">© 2018 Cakes</p>
+            <ul class="footer__socials footer__bottom-social">
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link__before instagram" href="#"><img src="images/instagram-noncolor.svg" alt=""></a>
+                    <a class="footer__socials-link__after instagram" href="#"><img src="images/instagram-noncolor-768-footer.svg" alt=""></a>
+                </li>
+                <li class="footer__socials-item">
+                    <a class="footer__socials-link__before vk" href="#"><img src="images/vk-noncolor.svg" alt=""></a>
+                    <a class="footer__socials-link__after vk" href="#"><img src="images/vk-noncolor-768-footer.svg" alt=""></a>
+                </li>
+            </ul>
         </div>
     </div>
 </footer>

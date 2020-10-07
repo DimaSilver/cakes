@@ -9,6 +9,9 @@
     display: flex;
     justify-content: space-between;
   }
+  &__left{
+    display: flex;
+  }
   &__phone{
     font-size: 15px;
     line-height: 17px;
@@ -16,14 +19,29 @@
   }
 }
 .menu{
+  &__btn{
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    left: 93px;
+    div{
+      width: 26px;
+      height: 2px;
+      background-color: #000000;
+      margin-top: 6px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
   &__list-item{
     display: inline-block;
     text-transform: uppercase;
     font-size: 13px;
     line-height: 15px;
-    & + & {
-      margin-left: 44px;
-    }
+    margin-left: 44px;
   }
 }
 .first-screen{
@@ -121,6 +139,7 @@
       box-shadow: 0 10px 12.74px 0.26px rgba(163, 6, 60, 0.12);
     }
     &:first-child{
+      position: relative;
       .our-cakes__gallery-item__arrow{
         display: flex;
       }
@@ -128,6 +147,17 @@
         padding-right: 24px;
         font-size: 20px;
         line-height: 24px;
+      }
+      .our-cakes__gallery-item__arrow-mobile{
+        position: absolute;
+        display: none;
+        bottom: 20px;
+        right: 60px;
+      }
+      .our-cakes__gallery-item__arrow-mobile .our-cakes__gallery-item__arrow-name__mobile{
+        padding-right: 24px;
+        font-size: 12px;
+        line-height: 14px;
       }
     }
     &:first-child,
@@ -385,6 +415,10 @@
   &__item-design__slider-part{
     box-shadow: 0 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
     position: relative;
+    transition: all .3s;
+    &:hover{
+      box-shadow: 0px 6px 9.7px 0.3px rgba(0, 0, 0, 0.14);
+    }
   }
   &__item-design__slider-part__textarea{
     position: absolute;
@@ -1020,6 +1054,12 @@
     line-height: 14px;
     letter-spacing: 0.4px;
     color: rgba(#000, .5);
+  }
+  &__logo-responsive{
+    display: none;
+  }
+  &__bottom-social{
+    display: none;
   }
 }
 .footer__socials-link.instagram:hover::before {
