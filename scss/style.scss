@@ -50,6 +50,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+  &__image{
+    display: none;
+  }
   &__left{
     position: relative;
     &::after{
@@ -111,6 +114,9 @@
   }
   &__benefits-item__img{
     margin-right: 15px;
+  }
+  &__benefits-item__img-responsive{
+    display: none;
   }
   &__benefits-item__title{
     font-size: 14px;
@@ -344,6 +350,7 @@
   &__item-sizes__inner{
     white-space: nowrap;
     margin-top: 70px;
+    width: 880px;
   }
   &__item-sizes__part{
     display: inline-block;
@@ -385,6 +392,18 @@
     .individual-order__item-sizes__part-info{
       margin-left: 25px;
     }
+  }
+  &__item-sizes__part-slider__mobile{
+    display: none;
+  }
+  &__item-sizes__part-slider__mobile-btn__wrapper{
+    display: none;
+  }
+  &__item-sizes__part-slider__mobile-btn{
+    padding: 15px 44px 14px 45px;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
   }
   &__item-design{
     margin-left: 130px;
@@ -465,6 +484,15 @@
     font-size: 27px;
     line-height: 30px;
   }
+  &__item-design__slider-mobile{
+    display: none;
+  }
+  &__item-design__slider-mobile__btn-wrapper{
+    display: none;
+  }
+  &__item-design__slider-mobile__btn{
+    padding: 17px 63px 17px 62px;
+  }
   &__item-choice__label-input{
     border: none;
     outline: none;
@@ -510,6 +538,21 @@
   &__item-design__slider-next{
     right: -80px;
   }
+}
+.individual-order__item-sizes__inner .slick-list .slick-track{
+  display: flex;
+  align-items: center;
+  left: 30px;
+}
+.individual-order__item-sizes__inner .slick-list .slick-track .slick-slide:first-child{
+  width: 180px !important;
+  margin-top: 80px;
+}
+.individual-order__item-sizes__inner .slick-list .slick-track .slick-slide:nth-child(2){
+  margin-top: 41px;
+}
+.individual-order__item-sizes__inner .slick-list .slick-track .slick-slide:nth-child(3){
+  margin-top: 25px;
 }
 .reviews{
   margin-top: 100px;
@@ -1019,6 +1062,9 @@
     & + & {
       margin-left: 18px;
     }
+  }
+  &__list-item.footer__list-item__mobile{
+    display: none;
   }
   &__socials-link{
     &.instagram{
