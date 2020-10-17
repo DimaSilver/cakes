@@ -1,4 +1,7 @@
 $(function(){
+    $('.menu__list').on("click", ".menu__list-item", function() {
+        $(this).addClass('menu__list-item--active').siblings().removeClass('menu__list-item--active');
+    });
     $('.individual-order__slider').slick({
         prevArrow: '<button type="button" class="individual-order__slider-prev individual-order__slider-arrows"><img src="images/arrow-left__slider.svg" alt=""></button>',
         nextArrow: '<button type="button" class="individual-order__slider-next individual-order__slider-arrows"><img src="images/arrow-right__slider.svg" alt=""></button>',
