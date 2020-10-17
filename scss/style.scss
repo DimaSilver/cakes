@@ -245,7 +245,7 @@
 .individual-order{
   &__item{
     width: 100%;
-    min-height: 570px;
+    height: 570px;
     background-color: #fff;
     padding: 75px 125px 80px 85px;
     box-shadow: 0 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
@@ -1121,8 +1121,35 @@
 .footer__socials-link.instagram:hover::before {
   opacity: 1;
 }
-
-
-
+html:first-child .reviews::before, .reviews::after {
+  display: none;
+}
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .quote__text{
+    max-width: 640px;
+  }
+  .quote__inner{
+    align-items: center;
+  }
+  .contacts__right{
+    left: 50%;
+    transform: translateX(50%);
+    right: 0;
+  }
+  .individual-order__slider-prev{
+    left: -50px;
+  }
+  .individual-order__slider-next{
+    right: -50px;
+  }
+}
+@supports (-ms-ime-align:auto) {
+  .quote__text{
+    max-width: 640px;
+  }
+  .quote__inner{
+    align-items: center;
+  }
+}
 
 @import "media";
